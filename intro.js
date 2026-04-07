@@ -1,7 +1,7 @@
 document.getElementById('startBtn').addEventListener('click', function() {
     const introContent = document.querySelector('.intro-content');
-    introContent.classList.add('fade-out');
+    introContent.classList.add('effect1');
     setTimeout(() => {
-        window.location.href = 'main.html';
+        window.location.href = 'index.html';
     }, 800);
 });

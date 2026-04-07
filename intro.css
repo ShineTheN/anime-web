@@ -9,23 +9,38 @@ body, html {
 
 .intro-bg {
     position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0; left: 0;
-    z-index: 1;
-    /* Dynamic animated gradient background */
-    background: linear-gradient(-45deg, #f6d365, #fda085, #a1c4fd, #c2e9fb);
-    background-size: 400% 400%;
-    animation: gradientBG 8s ease-in-out infinite;
+    inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    background: transparent;
 }
 
-@keyframes gradientBG {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
+.intro-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('images/background/bg1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(18px) brightness(0.55);
+    transform: scale(1.1);
+    z-index: 0;
+}
+
+.intro-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(14, 22, 52, 0.38);
+    z-index: 1;
+}
+
+.intro-bg > .intro-content {
+    position: relative;
+    z-index: 2;
 }
 
 .intro-content {
@@ -33,7 +48,7 @@ body, html {
     text-align: center;
     color: #fff;
     font-family: 'Montserrat', Arial, sans-serif;
-    background: rgba(30,30,60,0.7);
+    background: rgba(30,30,60,0.8);
     padding: 48px 32px 32px 32px;
     border-radius: 24px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.18);
@@ -52,7 +67,7 @@ body, html {
     border: none;
     border-radius: 32px;
     background: linear-gradient(90deg, #fda085, #f6d365);
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 700;
     cursor: pointer;
@@ -63,9 +78,7 @@ body, html {
     background: linear-gradient(90deg, #a1c4fd, #c2e9fb);
     transform: scale(1.07);
 }
-
-/* Animation for fade out */
-.intro-content.fade-out {
+.intro-content.effect1 {
     opacity: 0;
     transform: scale(0.7) translateY(-80px) rotateX(30deg);
 }
