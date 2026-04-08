@@ -1,6 +1,15 @@
-*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif
+}
 
-body{overflow-x:hidden;background:black;color:white}
+body{
+    overflow-x:hidden;
+    background:black;
+    color:white
+}
 
 #bg-video{
   position:fixed;
@@ -23,9 +32,11 @@ body{overflow-x:hidden;background:black;color:white}
   padding:20px 40px;
   z-index:10;
 }
+
 header a.active, a:hover{
   font-size: 110%;
   text-shadow: 0px 0px 20px white;
+  color: cyan;
 }
 .logo {
     display: flex;
