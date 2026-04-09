@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/logo.jpg">
 </head>
@@ -22,18 +26,89 @@
     </div>
 </div>
 </header>
+<main>
 <div class="hero">
-    <!--
-    // Video nền đã được thêm vào trong các trang khác
-    <video autoplay muted loop id="bg-video">
-        <source src="videos/fu.mp4" type="video/mp4">
-    </video>
-    -->
-    <div class="overlay"></div>
-    <div class="content">
-        <h1>Nội dung 1</h1>
-    </div>
+        <video autoplay muted loop id="bg-video">
+            <source src="videos/fu.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="slider swiper">
+            <div class="slider-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <img src="images/main/m1.png" id="anime-card">
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="images/main/m2.png" id="anime-card">
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="images/main/m3.png" id="anime-card">
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="images/main/m4.png" id="anime-card">
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="images/main/m5.png" id="anime-card">
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="images/main/m6.png" id="anime-card">
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="images/main/m7.png" id="anime-card">
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="images/main/m8.png" id="anime-card">
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="images/main/m9.png" id="anime-card">
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="images/main/m10.png" id="anime-card">
+                    </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+
+            </div>
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="slider.js"></script>
+        </div>
+        <div class="container-1">
+            <ul id="anime-name-list-index">
+                <li>
+                    <a href="anime1">Doraemon</a>
+                </li>
+                <li>
+                    <a href="anime1">Jujutsu Kaisen</a>
+                </li>
+                <li>
+                    <a href="anime1">Demon Slayer</a>
+                </li>
+                <li>
+                    <a href="anime1">Dragon Ball</a>
+                </li>
+                <li>
+                    <a href="anime1">One Piece</a>
+                </li>
+                <li>
+                    <a href="anime1">Fairy Tail</a>
+                </li>
+                <li>
+                    <a href="anime1">Shin</a>
+                </li>
+                <li>
+                    <a href="anime1">Naruto</a>
+                </li>
+                <li>
+                    <a href="anime1">Spirited Away</a>
+                </li>
+                <li>
+                    <a href="anime1">Your Name</a>
+                </li>
+            </ul>
+        </div>
 </div>
+</main>
 <footer style = "background-color: black">
     <hr>
     Author: H.Quang, HuyThinh, Tin, Hoang, VKhang
