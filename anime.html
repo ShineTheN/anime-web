@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/logo.jpg">
 </head>
@@ -22,13 +26,101 @@
     </div>
 </div>
 </header>
+<main>
 <div class="hero">
-
-    <div class="overlay"></div>
-    <div class="content">
-        <h1>Nội dung 2</h1>
+        <video autoplay muted loop id="bg-video">
+            <source src="videos/fu.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+    <nav id="anime-list">
+        <ul id="anime-list">
+                <li>
+                    <a href="anime1" class="active">Doraemon</a>
+                </li>
+                <li>
+                    <a href="anime1">Jujutsu Kaisen</a>
+                </li>
+                <li>
+                    <a href="anime1">Demon Slayer</a>
+                </li>
+                <li>
+                    <a href="anime1">Dragon Ball</a>
+                </li>
+                <li>
+                    <a href="anime1">One Piece</a>
+                </li>
+                <li>
+                    <a href="anime1">Fairy Tail</a>
+                </li>
+                <li>
+                    <a href="anime1">Shin</a>
+                </li>
+                <li>
+                    <a href="anime1">Naruto</a>
+                </li>
+                <li>
+                    <a href="anime1">Spirited Away</a>
+                </li>
+                <li>
+                    <a href="anime1">Your Name</a>
+                </li>
+            </ul>
+    </nav>
+    <div class="anime-content">
+        <span id="anime-name">Doraemon</span>
+        <span id="anime-description">
+            <ul id="description">
+                <li id="description"> <span id="description">Thể loại</span> Hài hước, khoa học viễn tưởng, đời sống</li>
+                <li id="description"> <span id="description">Nội dung:</span>  Kể về chú mèo máy Doraemon đến từ tương lai để giúp cậu bé hậu đậu Nobita cải thiện cuộc sống bằng những bảo bối thần kỳ. Tuy nhiên, mọi chuyện thường trở nên rắc rối vì Nobita lạm dụng chúng.</li>
+                <li id="description"> <span id="description">Nhân vật chính</span> Hài hước, khoa học viễn tưởng, đời sống</li>
+                <li id="description"> <span id="description">Năm phát hành</span> Hài hước, khoa học viễn tưởng, đời sống</li>
+                <li id="description"> <span id="description">Ý nghĩa</span> Hài hước, khoa học viễn tưởng, đời sống</li>
+            </ul>
+        </span>
+            
     </div>
 </div>
+<div class="slider swiper" id="char">
+            <div class="slider-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <img src="images/characters/doraemon/image 1.png" id="char-card">
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="images/characters/doraemon/image 2.png" id="char-card">
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="images/characters/doraemon/image 3.png" id="char-card">
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="images/characters/doraemon/image 4.png" id="char-card">
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="images/characters/doraemon/image 5.png" id="char-card">
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="images/characters/doraemon/image1.jpg" id="char-card">
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="images/characters/doraemon/image2.jpg" id="char-card">
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="images/characters/doraemon/image3.jpg" id="char-card">
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="images/characters/doraemon/image4.jpg" id="char-card">
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="images/characters/doraemon/image5.jpg" id="char-card">
+                    </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+
+            </div>
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="slider.js"></script>
+</main>
 <footer style = "background-color: black">
     <hr>
     Author: H.Quang, HuyThinh, Tin, Hoang, VKhang
