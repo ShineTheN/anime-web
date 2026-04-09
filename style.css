@@ -66,6 +66,10 @@ header a.active, a:hover{
     height: auto;
     border-radius: 10px;
 }
+.img img:hover{
+    transform: translateY(-5px);
+    transition: 0.5s; 
+}
 .menu{
     display:flex;
     gap:30px;
