@@ -152,3 +152,24 @@ header a.active, a:hover{
     font-weight: bold;
     text-shadow: 0 0 10px cyan;
 }
+div.slider{
+    margin-top: -5%;
+    margin-left: 15%;
+    width: 30%;
+    height: 60%;
+}
+img#anime-card{
+    position: relative;
+    width: 350px;
+    height: 450px;
+}
+div.container-1{
+    margin-top: -27%;
+    margin-left: 20%;
+    font-size: 25px;
+}
+li{
+    color: white;
+    text-align: left;
+    margin-top: 5px;
+}
