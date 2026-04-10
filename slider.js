@@ -1,10 +1,14 @@
 const swiper = new Swiper('.swiper', {
 
     loop: true,
+    grabCursor:true,
+    spceBetween: true,
 
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true
     },
 
     // Navigation arrows
