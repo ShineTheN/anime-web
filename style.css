@@ -177,10 +177,11 @@ li{
     margin-top: 10px;
 }
 nav#anime-list{
-    margin-top: 5%;
-    position: absolute;
-    margin-left: -80%;
+    margin-top: 0%;
+    position: relative;
+    margin-left: 5%;
     font-size: 20px;
+    width: 100%;
 }
 nav a.active{
     font-size: 110%;
@@ -189,12 +190,11 @@ nav a.active{
 }
 div.anime-content{
     margin-top: 5%;
-    margin-left: 15%;
-    
+    margin-left: 10%;   
 }
 img#anime-img{
-    margin-top: -40%;
-    margin-left: 20%;
+    margin-top: 40%;
+    margin-left: 10%;
     width: 300px;
     height: 400px;
 }
@@ -205,33 +205,49 @@ span#anime-name{
     color: white;
 }
 span#anime-name{
-    margin-left: -60%;
+    align-self: normal;
     font-size: 40px;
 }
 span#anime-description{
-    margin-left: 20%;
+    margin-left: 5%;
 }
 div.anime-content{
-    margin-left: 20%;
+    width: 200%;
+    margin-right: 20%;
+    margin-left: -10%;
+}
+ul#description{
+    width: 50%;
 }
 li#description{
-    font-size: 20px;
-    width: 40%;
+    font-size: 22px;
+    width: 100%;
 }
-div#char{
-    margin-left: 60%;
-    margin-top: -550px;
+div.slider-1{
+    margin-top: 15%;
+    margin-right: 10%;
+    width: 60%;
+    height: 60%;
 }
 img#char-card{
     position: relative;
     margin-left: 5%;
-    width: 350px;
-    height: 400px;
+    margin-right: 5%;
+    width: 90%;
+    height: 90%;
 }
 section#anime{
-    width: 90%;
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 210%;
+    height: 120%;
+    background-size: 150%;
 }
 div.hero#anime{
+    display: flex;
+    flex-direction: row;
+}
+main#Anime{
     display: flex;
     flex-direction: row;
 }
