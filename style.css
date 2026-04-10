@@ -156,7 +156,7 @@ header a.active, a:hover{
     text-shadow: 0 0 10px cyan;
 }
 div.slider{
-    margin-top: -5%;
+    margin-top: 5%;
     margin-left: 15%;
     width: 30%;
     height: 60%;
@@ -220,13 +220,18 @@ li#description{
 }
 div#char{
     margin-left: 60%;
-    margin-top: -35%;
+    margin-top: -550px;
 }
 img#char-card{
     position: relative;
-    width: 300px;
+    margin-left: 5%;
+    width: 350px;
     height: 400px;
 }
 section#anime{
     width: 90%;
+}
+div.hero#anime{
+    display: flex;
+    flex-direction: row;
 }
