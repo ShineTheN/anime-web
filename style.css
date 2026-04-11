@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+h1 {
+    font-family: 'Bungee', cursive;
+    color: cyan;
+}
 *{
     margin:0;
     padding:0;
@@ -101,7 +107,7 @@ header a.active, a:hover{
     display:flex;
     justify-content:center;
     align-items:center;
-    flex-direction:column;
+    flex-direction:row;
     text-align:center;
   
 }
@@ -195,14 +201,17 @@ img#anime-card{
     height: 450px;
 }
 div.container-1{
-    margin-top: -30%;
-    margin-left: 20%;
+    margin-right: 20%;
     font-size: 25px;
 }
 li{
     color: white;
     text-align: left;
     margin-top: 10px;
+}
+li a{
+    text-decoration: none;
+    color: rgb(168, 222, 218)
 }
 nav#anime-list{
     margin-top: 0%;
@@ -211,12 +220,18 @@ nav#anime-list{
     font-size: 20px;
     width: 100%;
 }
+nav a{
+    color: white;
+    text-decoration: none;
+}
 nav a.active{
     font-size: 110%;
     text-shadow: 0px 0px 20px white;
     color: cyan;
 }
 div.anime-content{
+    width: max-content;
+    height: max-content;
     margin-top: 5%;
     margin-left: 10%;   
 }
@@ -246,32 +261,32 @@ div.anime-content{
     margin-right: 20%;
     margin-left: -10%;
 }
-ul#description{
-    width: 50%;
-}
 li#description{
     font-size: 22px;
     width: 100%;
 }
 div.slider-1{
-    margin-top: 15%;
-    margin-right: 10%;
-    width: 60%;
-    height: 60%;
+    margin-top: 10%;
+    right: 15%;
+    margin-left: 5%;
+    width: 75%;
+    height: 55%;
 }
 img#char-card{
     position: relative;
     margin-left: 5%;
     margin-right: 5%;
-    width: 90%;
+    width: 100%;
     height: 90%;
 }
 section#anime{
     margin-top: 10%;
     margin-left: 5%;
-    width: 220%;
-    height: 120%;
-    background-size: 150%;
+    width: 180%;
+    height: auto;
+}
+ul#description{
+    width: 48%;
 }
 div.hero#anime{
     display: flex;
